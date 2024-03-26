@@ -1,0 +1,64 @@
+
+
+span{
+    color: red;
+}
+
+.container1 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 225, 225, .2);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.bmi1 {
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 1px solid #09ff00;
+    width: 50%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.head {
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+
+.par {
+    color: white;
+}
+
+.calculate {
+    width: 100%;
+    height: 35px;
+    margin-top: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: #4ebb4a;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 25px;
+    color: #fff;
+}
+
+

@@ -1,0 +1,43 @@
+@font-face {
+    font-family: font;
+    src: url(Fonts/Super\ Comic.ttf);
+}
+
+.bg{
+    min-height: 100vh;
+    background: url(Pics/woodentable.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+
+
+.txtcolor:hover{
+    color: rgba(43, 220, 43, 0.733);
+}
+
+.color{
+    color: white;
+}
+
+.font{
+    font-family: font;
+    font-size: 50px;
+}
+
+.information { 
+    font-size: 16px;
+    font-weight: 500;
+    margin: 16px;
+    color: white;
+}
+
+#back-btn{
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgba(43, 220, 43, 0.733);
+}

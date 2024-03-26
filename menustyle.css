@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Breakfast;
+    src: url(Fonts/Mercado.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    background: url(Pics/woodentable.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    background: whitesmoke;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav li a {
+    padding: 0px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.nav li a:hover {
+    color: green;
+    transition: .5s ease 0s
+}
+
+.title {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.option {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    background: transparent;
+}
+
+.option ul {
+    text-align: center;
+}
+
+.option li {
+    display: inline-block;
+}
+
+.option li a {
+    padding: 0px 30px;
+    text-decoration: none;
+    font-weight: 1000;
+    font-size: 30px;
+    color: white;
+}
+
+.option li a:hover {
+    color: green;
+    transition: .5s ease 0s
+}
+
+.information { 
+    padding: 32px;
+    justify-content: space-between;
+    text-align: inherit;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.food {
+    margin: 32px 16px;
+}
+
+.foodname {
+    color: white;
+}
+
+.info {
+    color: white;
+}
+
+img {
+    border-radius: 16px;
+}
+
+button {
+    padding: 10 px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    height: 25px;
+    width: 50%x;
+    color: #eee;
+    background: #4ebb4a;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+

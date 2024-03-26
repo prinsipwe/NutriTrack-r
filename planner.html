@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plannerstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>NutriTrack'r | Planner</title>
+</head>
+
+<body class="bg">
+    <div class="container-fluid px-5 mt-5">
+        <h2 class="display4 text-center color font mb-3">Meal Planner</h2>
+
+        <div class="information">
+            Name: <span id="user-Name"> </span>
+            <br>
+            Age: <span id="edad"> </span>
+            <br>
+            BMI: <span id="stat"> </span>
+        </div>
+
+        <div class="table-responsive-lg">
+            <table class="table table-light table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center txtcolor"></th>
+                        <th scope="col" class="text-center txtcolor">Breakfast</th>
+                        <th scope="col" class="text-center txtcolor">Lunch</th>
+                        <th scope="col" class="text-center txtcolor">Dinner</th>
+                    </tr>
+                </thead>    
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-center">Sunday</th>
+                        <td class="text-center" id="sunday-breakfast" ></td>
+                        <td class="text-center" id="sunday-lunch"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Monday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Tuesday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Wednesday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Thursday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Friday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Saturday</th>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                        <td class="text-center"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn">
+                <a href="breakfast.html"><button id="back-btn">Go To Meals</button></a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+
+        const userName = localStorage.getItem('user-Name');
+        const age = localStorage.getItem('edad');
+        const bmi = localStorage.getItem('stat');
+        
+        document.getElementById('user-Name').textContent = userName;
+        document.getElementById('edad').textContent = age;
+        document.getElementById('stat').textContent = bmi;
+
+        const selectedFood = localStorage.getItem('selectedFood');
+        const selectedFoodImage = localStorage.getItem('selectedFoodImage');
+        if (selectedFood && selectedFoodImage) {
+            // Update the respective cell in the table with the selected food and its image
+            document.getElementById('sunday-breakfast').innerHTML = `<img src="${selectedFoodImage}" alt="${selectedFood}" width="100" height="80"><br>${selectedFood}`;
+        }
+        
+        
+    </script>
+</body>
+</html>

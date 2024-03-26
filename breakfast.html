@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriTrack'r | Breakfast</title>
+    <link rel="shortcut icon" href="Pics/NutriTrack'r Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="menustyle.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div>
+            <ul>
+                <li><a href="frontweb.html">Home</a></li>
+                <li><a href="planner.html">Planner</a></li>
+                <li><a href="#BMICalc">BMICalc</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 class="title">BREAKFAST</h2>
+
+    <div>
+        <nav class="option">
+            <ul>
+                <li><a href="breakfast.html">Breakfast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+
+
+    <div class="container">
+        <div class="food">
+            <img src="Breakfast/EggSandwich.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">Egg Sandwich</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button class="add-to-planner" data-name="Egg Sandwich" data-image="Breakfast/EggSandwich.jpg" >Add to Planner</button>        
+        </div>
+        <div class="food">
+            <img src="Breakfast/TunaSandwich.webp" alt="" width="400" height="280">
+            <h2 class="foodname">Tuna Sandwich</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button class="add-to-planner" data-name="Tuna  Sandwich">Add to Planner</button>        
+        </div>
+        <div class="food">
+            <img src="Breakfast/FriedRice.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">Fried Rice</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/oatmeal.webp" alt="" width="400" height="280">
+            <h2 class="foodname">Oat Meal</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/ArrozCaldo.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">Arroz Caldo</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/cabbageomelette.avif" alt="" width="400" height="280">
+            <h2 class="foodname">Cabbage Omelette</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/tapsilog.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">TapSilog</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/hotsilog.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">HotSilog</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+        <div class="food">
+            <img src="Breakfast/tocilog.jpg" alt="" width="400" height="280">
+            <h2 class="foodname">TociSilog</h2>
+            <h5 class="info">Calories: eme | Prep Time: eme</h5>
+            <button>Add to Planner</button>
+        </div>
+
+
+
+
+
+    </div>
+
+    <script>
+        // Add event listener to all "Add to Planner" buttons
+        const addToPlannerButtons = document.querySelectorAll('.add-to-planner');
+        addToPlannerButtons.forEach(button => {
+            button.addEventListener('click', function () {
+                // Get food details
+                const foodName = button.getAttribute('data-name');
+                const foodImage = button.getAttribute('data-image');
+                // Store selected food details in localStorage
+                localStorage.setItem('selectedFood', foodName);
+                localStorage.setItem('selectedFoodImage', foodImage);
+                // Redirect to planner page
+                window.location.href = 'planner.html';
+            });
+        });
+
+    </script>
+
+</body>
+</html>
