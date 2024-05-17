@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'myfont';
+    src: url(EqualSlipcase-Regular.ttf);
+}
+
+.nav {
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: relative;
+    background: whitesmoke;
+}
+
+.nav .logo {
+    height: 75px;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav li a {
+    padding: 0px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+.nav li a:hover {
+    color: green;
+    transition: .5s ease 0s
+}
+
+#about {
+    min-height: 100vh;
+    background: url(Pics/Table.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#about2 {
+    color: white;
+    text-align: center;
+    width: 600px;
+    font-size: 20px; 
+    padding: 20px;
+    margin-bottom: 20px;
+    position: absolute;
+    top: 50%;
+    right: 35%; 
+    transform: translate(50%, -50%); 
+    
+}
+
+.nutri {
+    color: white;
+    text-align: center;
+    font-size: 88px; 
+    padding: 10px;
+    font-family: 'myfont';
+}
+
+.nutrip{
+    color: white;
+    text-align: center;
+    font-size: 19px; 
+    padding: 10px;
+}
+
+.mainh {
+    color: #2c4331;
+    font-size: 32px;
+    padding: 20px 100px;
+    margin-bottom: 5px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.subh {
+    color: black;
+    font-size: 25px;
+    padding: 20px 150px;
+    margin-bottom: 20px;
+}
+
+.bout{
+    color: black;
+    line-height: 1.6em;
+    font-size: 20px;
+    padding: 0 180px 0 180px;
+}

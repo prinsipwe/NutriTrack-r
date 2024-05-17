@@ -1,0 +1,115 @@
+@font-face {
+    font-family: font;
+    src: url(Fonts/Super\ Comic.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg{
+    min-height: 100vh;
+    background: url(Pics/woodentable.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.txtcolor:hover{
+    color:#007444;
+}
+
+.color{
+    color: white;
+}
+
+.font{
+    font-family: font;
+    font-size: 50px;
+}
+
+.information { 
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.head {
+    text-align: center;
+    align-items: center;
+    font-family: font;
+    font-size: 100px;
+    color: white;
+}
+
+.select-meals{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #007444;
+}
+
+/* Form styling */
+form {
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+.head3 {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.sugg {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sugg:hover {
+    background: #007444;
+}
+
+/* Suggestions list styling */
+#suggestionsList {
+    margin-top: 20px;
+    color: white;
+}
+
+#suggestionsList h2 {
+    margin-bottom: 10px;
+}
+
+#suggestions {
+    list-style-type: none;
+}
+
+#suggestions li {   
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+

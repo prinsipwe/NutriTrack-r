@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="plannerstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="Pics/NutriTrack'r Logo.png" type="image/x-icon">
+
+    <title>NutriTrack'r | Planner</title>
+</head>
+
+<body class="bg">
+    <div class="container-fluid px-5 mt-5">
+        <h2 class="head">Meal Planner</h2>
+
+        <div class="information">
+            <div class="info-item">Name: <span id="user-Name"></span></div>
+            <div class="info-item">Age: <span id="edad"></span></div>
+            <div class="info-item">BMI: <span id="stat"></span></div>
+        </div>
+
+
+        <div class="table-responsive-lg">
+            <table class="table table-light table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" class="text-center txtcolor"></th>
+                        <th scope="col" class="text-center txtcolor">Breakfast</th>
+                        <th scope="col" class="text-center txtcolor">Lunch</th>
+                        <th scope="col" class="text-center txtcolor">Dinner</th>
+                        <th scope="col" class="text-center txtcolor"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" class="text-center">Sunday</th>
+                        <td class="text-center" id="sunday-breakfast"></td>
+                        <td class="text-center" id="sunday-lunch"></td>
+                        <td class="text-center" id="sunday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Sunday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Monday</th>
+                        <td class="text-center" id="monday-breakfast"></td>
+                        <td class="text-center" id="monday-lunch"></td>
+                        <td class="text-center" id="monday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Monday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Tuesday</th>
+                        <td class="text-center" id="tuesday-breakfast"></td>
+                        <td class="text-center" id="tuesday-lunch"></td>
+                        <td class="text-center" id="tuesday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Tuesday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Wednesday</th>
+                        <td class="text-center" id="wednesday-breakfast"></td>
+                        <td class="text-center" id="wednesday-lunch"></td>
+                        <td class="text-center" id="wednesday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Wednesday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Thursday</th>
+                        <td class="text-center" id="thursday-breakfast"></td>
+                        <td class="text-center" id="thursday-lunch"></td>
+                        <td class="text-center" id="thursday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Thursday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Friday</th>
+                        <td class="text-center" id="friday-breakfast"></td>
+                        <td class="text-center" id="friday-lunch"></td>
+                        <td class="text-center" id="friday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Friday">Add a
+                                Meal</button></th>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="text-center">Saturday</th>
+                        <td class="text-center" id="saturday-breakfast"></td>
+                        <td class="text-center" id="saturday-lunch"></td>
+                        <td class="text-center" id="saturday-dinner"></td>
+                        <th scope="row" class="text-center"><button class="select-meals" data-day="Saturday">Add a
+                                Meal</button></th>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <form id="suggestionForm">
+        <h3 class="head3">Your Suggestion:</h3>
+        <textarea id="suggestion" name="suggestion"></textarea>
+        <button type="submit" class="sugg">Submit</button>
+    </form>
+
+    <div id="suggestionsList">
+        <h2>Submitted Suggestions:</h2>
+        <ul id="suggestions"></ul>
+    </div>
+
+    <script src="planner.js"></script>
+
+</body>
+
+</html>
